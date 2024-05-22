@@ -11,17 +11,15 @@ require 'CommonDao.php'
     <script src="js/jquery-3.2.1.min.js"></script>
     <script>
         $(document).ready(function () {
-            // alert("hello");
             $('.remove-to-do').click(function (){
                 const id= $(this).attr('id');
-                // alert(id);
+                
 
                 $.post("app/remove.php",
                     {
                         id: id
                     },
                     (data) =>{
-                        // alert(data);
                         if (data){
                             $(this).parent().hide(600);
                         }
@@ -37,7 +35,6 @@ require 'CommonDao.php'
                         id:id
                     },
                     (data) =>{
-                        // alert(data);
                         if (data != 'error'){
                             const h2 = $(this).next();
                             if (data === '1'){
@@ -48,7 +45,6 @@ require 'CommonDao.php'
                         }
                     }
                 );
-                // alert(id);
             });
         });
     </script>
