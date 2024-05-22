@@ -5,7 +5,6 @@ if (isset($_POST['title'])){
 
     $title = $_POST['title'];
 
-//    echo $title;
 
     if (empty($title)){
         header("Location: ../index.php?mess=error");
