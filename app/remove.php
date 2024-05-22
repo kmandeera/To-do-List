@@ -5,7 +5,6 @@ if (isset($_POST['id'])){
 
     $id = $_POST['id'];
 
-//    echo $title;
 
     if (empty($id)){
         echo 0;
